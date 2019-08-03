@@ -15,7 +15,7 @@ public:
 public slots:
     void clickSlots(QModelIndex curIndex);
     void showToolTip(const QModelIndex &index);
-    void horizontalHeaderShowToolTip(int &loginIndex);
+//    void horizontalHeaderShowToolTip(int &loginIndex);
 
 private:
     QTableView *m_tableView = nullptr;

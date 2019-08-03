@@ -62,7 +62,7 @@ Widget::Widget(QWidget *parent)
                                "color: red;}");
 //    m_tableView->verticalHeader()->hide();
 //    m_tableView->verticalHeader()->setVisible(false);
-    m_tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+    m_tableView->setSelectionBehavior(QAbstractItemView::SelectItems);
 
     //鼠标跟随
     m_tableView->setMouseTracking(true);
