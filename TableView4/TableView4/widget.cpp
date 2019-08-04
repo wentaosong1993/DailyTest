@@ -49,9 +49,11 @@ Widget::Widget(QWidget *parent)
     splitter->addWidget(tableView2);
 
     tableView1->setModel(tableModel);
+//    tableView1->setAlternatingRowColors(true); //相间色
     tableView1->show();
 
     tableView2->setModel(tableModel);
+//    tableView2->setAlternatingRowColors(true);
     tableView2->show();
 
     ///注意是setSelectionModel,而不是setSelectionMode
