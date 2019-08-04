@@ -53,7 +53,7 @@ Widget::Widget(QWidget *parent)
     tableView->setModel(tableModel);
     tableView->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
 //    tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);//单元格不可编辑
-    tableView->setContextMenuPolicy(Qt::CustomContextMenu);//自定义右键菜单
+//    tableView->setContextMenuPolicy(Qt::CustomContextMenu);//自定义右键菜单
 //    tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents); //这个实现各列平均分配，并且占满整个tableview
 //    tableView->resizeRowsToContents();//所有行高度自适应
 //    tableView->resizeColumnsToContents();
