@@ -1,5 +1,4 @@
 <RCC>
     <qresource prefix="/">
-        <file>Debug/debug/first.png</file>
     </qresource>
 </RCC>
