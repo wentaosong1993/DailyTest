@@ -14,14 +14,17 @@ MyLabel::MyLabel(QWidget *parent)
 //    pushButton->setText("按钮");
 
     label = new QLabel(this);
-    label->setFixedSize(400,400);
+//    label->setFixedSize(400,400);
 //    label->setText("<a href='www.baidu.com'>百度一下</a>");
 //    connect(label, SIGNAL(linkActivated(QString)), this, SLOT(linkClicked(QString)));
 //    label->setPixmap(QPixmap("./first.png"));
 
-    QPixmap pix("../first.png");
-    QPixmap pix2 = pix.scaled(label->width(), label->height());//设置大小和标签大小相适应
-    label->setPixmap(pix2);
+    label->setFixedSize(100,100);
+    label->setText("<a href='www.baidu.com'><img src=':/first.png' width=100 height=100></a>");
+//    QPixmap pix(":/first.png");
+//    QPixmap pix2 = pix.scaled(label->width(), label->height());//设置大小和标签大小相适应
+//    label->setPixmap(pix2);
+    label->setOpenExternalLinks(true);//点击图片打开链接
 
 
     //D:/GitHub/DailyTest/MyLabel/MyLabel/Debug/debug --- Qt
