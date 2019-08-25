@@ -2,11 +2,18 @@
 #include <QApplication>
 #include <QMessageBox>
 
+#include <QDebug>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     //    MsgBox w;
     //    w.show();
+
+
+    qDebug() << QString::fromLocal8Bit("你好，Qt!");//这种可以
+    qDebug() << QString::fromUtf8("你好，Qt!");//这种方式不能解决乱码的问题；
+
 
     QMessageBox msgBox;
     msgBox.setIcon(QMessageBox::Critical);
@@ -31,5 +38,8 @@ int main(int argc, char *argv[])
         // should never be reached
         break;
     }
+
+
+
     return a.exec();
 }
