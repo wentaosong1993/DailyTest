@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-08-19T09:55:28
+# Project created by QtCreator 2019-08-25T20:20:06
 #
 #-------------------------------------------------
 
@@ -24,8 +24,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        widget.cpp \
-    hosttreeview.cpp
+        treeview.cpp
 
-HEADERS  += widget.h \
-    hosttreeview.h
+HEADERS  += treeview.h
